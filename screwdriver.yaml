@@ -34,10 +34,10 @@ jobs:
       # the same job (as shown below).
       - export: export GREETING="Hello, world!"
       - hello: echo $GREETING
-      # Metadata is a structured key/value storage of relevant information about a build. 
+      # Metadata is a structured key/value storage of relevant information about a build.
       # Metadata will be shared with subsequent builds in the same workflow.
       # You can set any key using the command "meta set <key> <value>".
-      - set-metadata: meta set example.coverage 99.95
+      #- set-metadata: meta set example.coverage 99.95
   # We define another Job called "second_job". In this Job, we intend on running
   # a different set of commands.
   second_job:
